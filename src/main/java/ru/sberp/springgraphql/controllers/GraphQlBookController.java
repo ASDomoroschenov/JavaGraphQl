@@ -12,6 +12,9 @@ import ru.sberp.springgraphql.models.Author;
 import ru.sberp.springgraphql.models.Book;
 import ru.sberp.springgraphql.services.BookService;
 
+/**
+ * Для параллельного выполнения запросов необходимо возвращать объекты CompletableFuture<T>
+ */
 @Controller
 @RequiredArgsConstructor
 public class GraphQlBookController {

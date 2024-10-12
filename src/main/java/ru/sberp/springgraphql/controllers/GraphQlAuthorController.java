@@ -10,6 +10,9 @@ import ru.sberp.springgraphql.dto.CreateAuthorRequest;
 import ru.sberp.springgraphql.models.Author;
 import ru.sberp.springgraphql.services.AuthorService;
 
+/**
+ * Для параллельного выполнения запросов необходимо возвращать объекты CompletableFuture<T>
+ */
 @Controller
 @RequiredArgsConstructor
 public class GraphQlAuthorController {
