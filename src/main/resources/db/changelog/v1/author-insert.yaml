@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: Domoroschenov
+      changes:
+        - insert:
+            tableName: author
+            columns:
+              - column:
+                  name: first_name
+                  value: "Александр"
+              - column:
+                  name: last_name
+                  value: "Доморощенов"
+        - insert:
+            tableName: author
+            columns:
+              - column:
+                  name: first_name
+                  value: "Клим"
+              - column:
+                  name: last_name
+                  value: "Барабанов"

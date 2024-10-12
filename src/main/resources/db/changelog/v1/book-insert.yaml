@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: Domoroschenov
+      changes:
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: "Полное Руководство Java"
+              - column:
+                  name: page_count
+                  value: 600
+              - column:
+                  name: author_id
+                  value: 1
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: "Философия Java"
+              - column:
+                  name: page_count
+                  value: 400
+              - column:
+                  name: author_id
+                  value: 2
